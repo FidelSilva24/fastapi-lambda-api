@@ -32,7 +32,7 @@ Use the Authorization: Bearer <JWT> header for protected routes.\
 # Installation & Local Testing
 ## Clone the repository:\
 
-git clone https://github.com/FidelSilva24/fastapi-lambda-api.git\
+git clone https://github.com/FidelSilva24/fastapi-lambda-api.git \
 cd fastapi-lambda-api\
 python3 -m venv .venv\
 source .venv/bin/activate\
