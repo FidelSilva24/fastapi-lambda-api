@@ -18,14 +18,20 @@ async def users():
 
 @app.get("/user/{id}")
 async def user(id: int):
-    users = filter(lambda user: user.id == id, users_list)  # type: ignore
-    try:
-        return list(users)[0]
-    except:
-        return ""
+    result = next((u for u in users_list if u.id == id), None)
+    if result:
+        return result
+    return {"message": "User not found"}
 
 @app.get("/Products")
 async def products():
     return products_list
+
+@app.get("/product/{id}")
+async def product(id: int):
+    result = next((p for p in products_list if u.id == id), None)
+    if result:
+        return result
+    return {"message": "product not found"}
 
 handler = Mangum(app)
