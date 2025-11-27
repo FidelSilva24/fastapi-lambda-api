@@ -1,5 +1,0 @@
-fastapi
-pydantic
-mangum
-PyJWT 
-passlib[bcrypt]
