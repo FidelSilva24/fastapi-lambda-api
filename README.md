@@ -3,6 +3,7 @@ A lightweight FastAPI API demonstrating secure JWT authentication and cloud depl
 
 
 # Project Structure
+```text
 api/ \
 ├── main.py           # FastAPI application\
 ├── models.py         # Pydantic models for User and Product\
@@ -11,7 +12,7 @@ api/ \
 ├── generate_key.py   # Token creator\
 ├── requirements.txt  # Python dependencies\
 └── README.md         # This documentation\
-
+```
 # Features
 - FastAPI Framework – Modern, high-performance Python API.
 - JWT Authentication – Protects routes with JSON Web Tokens.
